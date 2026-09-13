@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        "use strict";
+        function bodyload(){
+            window.document.images[0].src =""
+            window.document.forms[0].elements[3].value="Register";
+            window.document.forms[1].elements[1].value ="login";
+
+        }
+
+    </script>
+</head>
+<body onload="bodyload()">
+    <div>
+     <img width="100" height="100" border="2">
+
+    </div>
+    <div>
+        <form >
+            <h3>
+                Register
+            </h3>
+            <dl>
+                <dt>user name</dt>
+                <dd><input type="text"></dd>
+                <dt>email</dt>
+                <dd><input type="email"></dd>
+                <dt>mobile</dt>
+                <dd><input type="text"></dd>
+
+            </dl>
+            <input type="button">
+        </form>
+    </div>
+    <div>
+        <form >
+            <h3>login</h3>
+             <dl> <!-- discriotion list --> 
+               <dt>email</dt>
+               <dd><input type="email"></dd>
+            </dl>
+            <input type="button">
+
+
+        </form>
+    </div>
+</body>
+</html>
