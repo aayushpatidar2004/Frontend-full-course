@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-
+width, initial-scale=1.0">
+
+<title>Document</title>
+<style>
+var {
+color:blue;
+}
+pre {
+border:1px solid black;
+padding: 10px;
+width: 400px;
+}
+samp {
+border:1px solid gray;
+padding: 2px;
+border-radius: 5px;
+}
+p::selection {
+background-color: yellow;
+}
+</style>
+</head>
+<body>
+<p>Lorem ipsum dolor sit amet, consectetur
+adipisicing elit. Voluptatum, ab veniam. Repellat
+accusantium voluptatum aperiam nam? Dolore aperiam,
+quidem quos odit necessitatibus magnam commodi
+placeat. Iste cumque suscipit placeat quibusdam.
+Lorem ipsum dolor sit amet, consectetur adipisicing
+elit. Voluptatum, ab veniam. Repellat accusantium
+voluptatum aperiam nam? Dolore aperiam, quidem quos
+odit necessitatibus magnam commodi placeat. Iste
+cumque suscipit placeat quibusdam.</p>
+<div>
+
+Normal Text <mark title="Change the letter
+size">Large Text</mark> Smaller Text
+</div>
+<div>
+<p>Write a function
+<samp><small>createHelloWorld</small></samp> that
+always returns a function with <samp><big>Hello
+World.</big></samp></p>
+</div>
+<pre>
+<code>
+var <var>createHelloWorld</var> = function()
+{
+return function(...args){
+return "Hello World";
+}
+}
+</code>
+</pre>
+</body>
+</html>
