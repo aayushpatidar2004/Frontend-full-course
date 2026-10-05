@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+    <script>
+
+        
+
+        function DeleteClick(){
+
+           console.warn("Delete Clicked");
+
+           flag =  confirm("Delete\nRecord Deleted");
+
+           if(flag===true){
+
+               document.querySelector("p").innerHTML = "<h1>Deleted. </h1>";
+
+               console.error("Delete Confirmed - with OK");
+
+           } else {
+
+              document.querySelector("p").outerHTML= "<h1>Canceled</h1>";
+
+           }
+
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <button onclick="DeleteClick()">Delete</button>
+
+    <p></p>
+
+</body>
+
+</html>
